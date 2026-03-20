@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Home Page</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+    <!-- Header -->
+    <div style="background:#2c3e50; color:white; padding:15px; text-align:center;">
+        <h1 style="margin:0;">My Website</h1>
+    </div>
+
+    <!-- Navigation -->
+    <div style="background:#34495e; padding:10px; text-align:center;">
+        <a href="{% url 'home' %}" style="color:white; margin:0 15px; text-decoration:none;">Home</a>
+        <a href="{% url 'about' %}" style="color:white; margin:0 15px; text-decoration:none;">About</a>
+        <a href="{% url 'contact' %}" style="color:white; margin:0 15px; text-decoration:none;">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div style="padding:50px; text-align:center; background:#ecf0f1;">
+        <h2>Welcome to My Website</h2>
+        <p>This is a simple homepage using HTML and inline CSS.</p>
+        <button style="padding:10px 20px; background:#2c3e50; color:white; border:none; cursor:pointer;">
+            Get Started
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#2c3e50; color:white; text-align:center; padding:10px;">
+        <p style="margin:0;">© 2026 My Website</p>
+    </div>
+
+    <!-- <ul>
+    {% for i in numbers %}
+        <li>{{i}}</li>
+    {% endfor %}
+    </ul>
+ 
+    {% if age >= 18 %}
+    <p>Adult</p>
+    
+    {% else %}
+    <p>Not adult</p>
+    {% endif %} -->
+
+
+</body>
+</html>

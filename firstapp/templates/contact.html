@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body style="margin:0; font-family:Arial, sans-serif;">
+
+    <!-- Header -->
+    <div style="background:#2c3e50; color:white; padding:15px; text-align:center;">
+        <h1 style="margin:0;">My Website</h1>
+    </div>
+
+    <!-- Navigation -->
+    <div style="background:#34495e; padding:10px; text-align:center;">
+        <a href="{% url 'home' %}" style="color:white; margin:0 15px; text-decoration:none;">Home</a>
+        <a href="{% url 'about' %}" style="color:white; margin:0 15px; text-decoration:none;">About</a>
+        <a href="{% url 'contact' %}" style="color:white; margin:0 15px; text-decoration:none;">Contact</a>
+    </div>
+
+    <!-- Contact Form -->
+    <div style="padding:40px; background:#ecf0f1; text-align:center;">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us!</p>
+
+        <form style="max-width:400px; margin:auto;">
+            <input type="text" placeholder="Your Name" 
+                style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc;"><br>
+
+            <input type="email" placeholder="Your Email" 
+                style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc;"><br>
+
+            <textarea placeholder="Your Message" rows="4"
+                style="width:100%; padding:10px; margin:10px 0; border:1px solid #ccc;"></textarea><br>
+
+            <button type="submit"
+                style="padding:10px 20px; background:#2c3e50; color:white; border:none; cursor:pointer;">
+                Send Message
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#2c3e50; color:white; text-align:center; padding:10px;">
+        <p style="margin:0;">© 2026 My Website</p>
+    </div>
+
+</body>
+</html>
